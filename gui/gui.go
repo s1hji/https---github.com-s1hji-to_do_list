@@ -179,7 +179,7 @@ func ShowTodoItems(w fyne.Window, todoList models.TodoList, items map[int][]mode
 	w.SetContent(content)
 }
 
-// Показывает детали задачи
+
 func showTaskDetails(w fyne.Window, task *models.Task, onUpdate func()) {
 	titleLabel := widget.NewLabelWithStyle(task.Title, fyne.TextAlignLeading, fyne.TextStyle{Bold: true})
 	descLabel := widget.NewLabel(task.Description)
@@ -212,7 +212,7 @@ func showTaskDetails(w fyne.Window, task *models.Task, onUpdate func()) {
 	dialog.ShowCustom("Детали задачи", "Закрыть", content, w)
 }
 
-// Редактирование задачи
+
 func editTaskDialog(w fyne.Window, task *models.Task, onSave func()) {
 	titleEntry := widget.NewEntry()
 	titleEntry.SetText(task.Title)
