@@ -17,7 +17,7 @@ func main() {
 	w := a.NewWindow("My Tasks")
 	w.Resize(fyne.NewSize(400, 600))
 
-	// Тестовые данные с учетом новых полей
+	
 	lists := []models.TodoList{
 		{
 			ID:          1,
